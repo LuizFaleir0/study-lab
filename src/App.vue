@@ -1,7 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1>Laboratório de Estudos</h1>
+  <AppRoot>
+    <RouterView />
+  </AppRoot>
 </template>
 
 <style scoped></style>
