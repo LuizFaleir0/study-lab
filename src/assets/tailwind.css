@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@layer base {
+  body {
+    @apply text-gray-900;
+  }
+
+  * {
+    @apply box-border m-0 p-0;
+  }
+}
