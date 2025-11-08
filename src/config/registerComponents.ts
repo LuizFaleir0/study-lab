@@ -2,18 +2,20 @@ import AppRoot from '@/components/root/AppRoot.vue'
 import type { App } from 'vue'
 
 /**
- * Componentes globais da aplicação
+ * Componentes globais
  */
 const globalComponents = {
-  AppRoot: AppRoot,
+  AppRoot,
 }
 
-export type GlobalComponentsRoot = typeof globalComponents
+/** Tipagem de componentes globais */
+export type GlobalComponentsRegisters = typeof globalComponents
 
 /**
- * Registra os componentes globais na aplicação Vue
+ * Registrar componentes globais
  */
 export default (app: App) => {
+  // forçar tipagem para preservar Component no iteration
   Object.entries(globalComponents).forEach(([name, component]) => {
     app.component(name, component)
   })

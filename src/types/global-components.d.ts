@@ -1,7 +1,7 @@
-import type { GlobalComponentsRoot } from '@/config/registerComponents'
+import type { GlobalComponentsRegisters } from '@/config/registerComponents'
 /* eslint-disable */
 declare module 'vue' {
-  export interface GlobalComponents extends GlobalComponentsRoot {}
+  export interface GlobalComponents extends GlobalComponentsRegisters {}
 }
 
 export {}
